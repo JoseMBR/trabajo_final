@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Unidad 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 11 - Unidad 1</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Formulario de Entrada de Datos</h2>
+            <p>Introduce los datos requeridos y pulsa "Enviar datos".</p>
+
+            <div class="formulario-container">
+                <form id="formulario" onsubmit="return unidad1_ejercicio11_validar()">
+                    <label for="nombre">Nombre y Apellidos: *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="0" max="120">
+                    
+                    <label for="codigo_postal">Código Postal:</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal" maxlength="5">
+                    
+                    <button type="submit" class="boton">Enviar datos</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript  (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Cargar el menú dinámico -->
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>

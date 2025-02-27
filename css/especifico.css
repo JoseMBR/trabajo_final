@@ -1,0 +1,53 @@
+/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal con flexbox */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Sección izquierda (contenidos y cabeceras) */
+#principal {
+    flex: 2;
+}
+
+/* Sección derecha (estado y código) */
+#secundario {
+    flex: 1;
+}
+
+/* Estilos generales para los bloques de información */
+#contenidos, #estados, #cabeceras, #codigo {
+    border: 2px solid #CCC;
+    background: #FAFAFA;
+    padding: 10px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    min-height: 80px;
+    margin-top: 10px;
+}
+
+/* Alturas específicas */
+#contenidos {
+    min-height: 250px;
+    overflow: auto;
+}
+
+#estados, #cabeceras {
+    min-height: 100px;
+}
+
+#codigo {
+    font-size: 1.3em;
+    font-weight: bold;
+}

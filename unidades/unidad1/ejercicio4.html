@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Unidad 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 4 - Unidad 1</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Tabla de multiplicar</h2>
+            <p>En este ejercicio, se debe ingresar un número entero positivo y mostrar la tabla de multiplicar de ese número.</p>
+
+            <div class="caja-codigo">
+                <h3>a) Ingresar un número y mostrar su tabla de multiplicar</h3>
+                <pre><code>
+&lt;script&gt;
+    function tablaMultiplicar() {
+        let numero = prompt("Introduce un número entero positivo:");
+        
+        // Verificamos que el número sea positivo
+        if (numero > 0) {
+            let tabla = "";
+            for (let i = 1; i <= 10; i++) {
+                tabla += numero + " x " + i + " = " + (numero * i) + "&lt;br&gt;";
+            }
+            document.getElementById("resultado").innerHTML = tabla;
+        } else {
+            alert("Por favor, ingresa un número entero positivo.");
+        }
+    }
+&lt;/script&gt;
+                </code></pre>
+                <button class="boton" onclick="ejercicio4()">Ejecutar</button>
+            </div>
+
+            <div id="resultado"></div> <!-- Donde se mostrará la tabla -->
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Enlace al archivo JS específico -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/menu.js"></script> <!-- Menú dinámico -->
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Unidad 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 8 - Unidad 1</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Visualizador de imágenes</h2>
+            <p>Selecciona una imagen para visualizarla y usa los botones para cambiar entre ellas.</p>
+
+            <div class="caja-codigo">
+                <h3>a) Control de imágenes</h3>
+                <div class="galeria">
+                    <button class="boton" onclick="unidad1_ejercicio8(-1)">⬅ Anterior</button>
+                    <img id="imagen-mostrada" src="../../img/ejercicio8/img1.jpg" alt="Imagen 1">
+                    <button class="boton" onclick="unidad1_ejercicio8(1)">Siguiente ➡</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript  (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Cargar el menú dinámico -->
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>

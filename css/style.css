@@ -1,0 +1,455 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: #333;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #2a9df4; /* Azul moderno */
+}
+
+/* Submenú oculto */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+.sub-menu li {
+    width: 100%;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sub-menu li a:hover {
+    background-color: #2a9df4;
+}
+
+/* Mostrar submenú cuando el usuario pasa el ratón */
+.submenu:hover .sub-menu {
+    display: block;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+/* ---------- ESTILOS PARA LOS EJERCICIOS ---------- */
+.ejercicio {
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    width: 60%;
+    text-align: center;
+}
+
+/* Cambios de color para la Unidad 1 - Ejercicio 2 */
+.ejercicio h2 {
+    color: #28a745; /* Verde */
+}
+
+.boton {
+    background-color: #28a745; /* Verde */
+}
+
+.boton:hover {
+    background-color: #218838;
+}
+
+/* Descripción del ejercicio */
+.ejercicio p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del código */
+.caja-codigo {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    font-family: monospace;
+    color: #333;
+    margin: 20px auto;
+    width: 90%;
+    overflow-x: auto;
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Código dentro del pre */
+.caja-codigo pre {
+    margin: 0;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Botón de interacción */
+.boton {
+    background-color: #2a9df4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: #1c7ecf;
+}
+
+/* ---------- ESTILOS DEL FOOTER ---------- */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Estilos para las tablas */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.acierto {
+    color: green;
+    font-weight: bold;
+}
+
+.fallo {
+    color: red;
+    font-weight: bold;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* ==== Estilos específicos para el formulario (Unidad 1 - Ejercicio 11) ==== */
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .boton {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+form .boton:hover {
+    background: #0056b3;
+}
+
+/*
+// ==============================
+// Unidad 2 
+// ==============================
+*/
+/* ============================== */
+/* Unidad 2 - Ejercicio 2 - Estilos solo para este ejercicio */
+/* ============================== */
+
+/* Estilo para ocultar y mostrar el texto */
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: inline;
+}
+
+/* Ajustar el tamaño del texto solo para el ejercicio 2 */
+#texto {
+    font-size: 18px; /* Aumentamos el tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+    max-width: 700px; /* Limitamos el ancho para mejor lectura */
+}
+
+/* ============================== */
+/* Estilo para el botón de añadir elemento */
+/* ============================== */
+
+input[type="button"] {
+    margin-top: 10px; /* Añadir un margen superior para separar el botón de la lista */
+}
+
+ul {
+    margin-top: 20px; /* Separar la lista de los elementos anteriores */
+}
+
+li {
+    margin-bottom: 5px; /* Espacio entre cada elemento de la lista */
+}
+
+/* ============================= */
+/* Estilos del tooltip mejorado  */
+/* ============================= */
+/* Resalta el texto en azul */
+.tooltip-instruccion {
+    color: #0066cc;  /* Azul similar a los enlaces en Windows */
+    font-weight: bold;
+    cursor: pointer;  /* El cursor se cambia a pointer */
+}
+
+/* Estilo del tooltip */
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    color: black;
+    font-size: 12px;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar el tooltip con transición */
+.tooltip-show {
+    visibility: visible;
+    transition: opacity 0.3s;
+}
+
+/* factura.css */
+
+/* Sección de la factura */
+.factura {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Encabezado de la factura */
+.factura h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Información de la empresa y cliente */
+.factura .empresa, .factura .cliente {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.factura h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.factura p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Tabla de productos */
+.factura .productos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.factura .productos th, .factura .productos td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.factura .productos th {
+    background-color: #f2f2f2;
+}
+
+.factura .productos td {
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.factura .productos tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el importe total */
+.factura .total {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilo para los números en las tablas */
+.factura .productos td, .factura .total p {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Ejercicio 4 unidad 4 */
+.caja-codigo {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.caja-codigo p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+code {
+    background-color: #e3e3e3;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+
+

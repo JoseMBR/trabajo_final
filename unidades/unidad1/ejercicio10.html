@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Unidad 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 10 - Unidad 1</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Selector de imágenes</h2>
+            <p>Selecciona una imagen de la lista o visualiza una aleatoria.</p>
+
+            <div class="caja-codigo">
+                <h3>a) Control de imágenes</h3>
+                <div class="galeria">
+                    <select id="lista-imagenes" onchange="unidad1_ejercicio10_seleccionar()">
+                        <option value="0">Imagen 1</option>
+                        <option value="1">Imagen 2</option>
+                        <option value="2">Imagen 3</option>
+                    </select>
+                    <img id="imagen-mostrada" src="../../img/ejercicio8/img1.jpg" alt="Imagen 1">
+                    <button class="boton" onclick="unidad1_ejercicio10_aleatoria()">Imagen Aleatoria</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript  (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Cargar el menú dinámico -->
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>

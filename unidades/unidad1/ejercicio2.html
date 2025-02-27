@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Unidad 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 2 - Unidad 1</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Array y Operaciones en JavaScript</h2>
+            <p>En este ejercicio trabajaremos con un array que contiene distintos tipos de valores y realizaremos varias operaciones.</p>
+            
+            <div class="caja-codigo">
+                <h3>a) Determinar qué palabra es mayor</h3>
+                <pre><code>
+&lt;script&gt;
+    let array = [true, 5, false, "hola", "adios", 2];
+    let palabraMayor = array[3].length > array[4].length ? array[3] : array[4];
+    alert("La palabra más larga es: " + palabraMayor);
+&lt;/script&gt;
+                </code></pre>
+                <!-- Botón para comparar los textos -->
+                <button class="boton" onclick="compararTextos()">Comparar Textos</button>
+            </div>
+
+            <div class="caja-codigo">
+                <h3>b) Operaciones booleanas</h3>
+                <pre><code>
+&lt;script&gt;
+    let resultadoTrue = array[0] || array[2];
+    let resultadoFalse = array[0] && array[2];
+    alert("Resultado True: " + resultadoTrue + "\nResultado False: " + resultadoFalse);
+&lt;/script&gt;
+                </code></pre>
+                <!-- Botón para operaciones booleanas -->
+                <button class="boton" onclick="operacionesBooleanas()">Operaciones Booleanas</button>
+            </div>
+
+            <div class="caja-codigo">
+                <h3>c) Operaciones matemáticas</h3>
+                <pre><code>
+&lt;script&gt;
+    let suma = array[1] + array[5];
+    let resta = array[1] - array[5];
+    let multiplicacion = array[1] * array[5];
+    let division = array[1] / array[5];
+    let modulo = array[1] % array[5];
+    alert("Suma: " + suma + 
+          "\nResta: " + resta + 
+          "\nMultiplicación: " + multiplicacion + 
+          "\nDivisión: " + division + 
+          "\nMódulo: " + modulo);
+&lt;/script&gt;
+                </code></pre>
+
+                <!-- Botón para operaciones matemáticas -->
+                <button class="boton" onclick="operacionesMatematicas()">Operaciones Matemáticas</button>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Enlace al archivo JS específico -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/menu.js"></script> <!-- Menú dinámico -->
+</body>
+</html>

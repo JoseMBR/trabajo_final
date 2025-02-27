@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Unidad 1</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 3 - Unidad 1</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Determinar el número mayor de tres números</h2>
+            <p>En este ejercicio, se deben ingresar tres números y se mostrará el mayor de ellos.</p>
+
+            <div class="caja-codigo">
+                <h3>a) Ingresar los tres números y determinar el mayor</h3>
+                <pre><code>
+&lt;script&gt;
+    function determinarMayor() {
+        let num1 = prompt("Introduce el primer número:");
+        let num2 = prompt("Introduce el segundo número:");
+        let num3 = prompt("Introduce el tercer número:");
+        
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+
+        let mayor = Math.max(num1, num2, num3);
+        alert("El número mayor es: " + mayor);
+    }
+&lt;/script&gt;
+                </code></pre>
+                <button class="boton" onclick="ejercicio3()">Ejecutar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Enlace al archivo JS específico -->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/menu.js"></script> <!-- Menú dinámico -->
+
+</body>
+</html>

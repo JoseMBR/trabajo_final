@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Unidad 4</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/especifico.css">
+    <script src="../../js/script.js"></script>
+    <script defer src="../../js/script6.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 6 - Unidad 4</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="form-container">
+            <form action="#">
+                <label for="recurso">URL:</label>
+                <input type="text" id="recurso" size="60">
+                <input type="button" id="enviar" value="Mostrar contenidos">
+            </form>
+        </section>
+
+        <div class="content-wrapper">
+            <section id="principal">
+                <h2>Contenidos del archivo:</h2>
+                <div id="contenidos"></div>
+
+                <h2>Cabeceras HTTP:</h2>
+                <div id="cabeceras"></div>
+            </section>
+
+            <section id="secundario">
+                <h2>Estados de la petición:</h2>
+                <div id="estados"></div>
+
+                <h2>Código de estado:</h2>
+                <div id="codigo"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript</p>
+    </footer>
+
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>

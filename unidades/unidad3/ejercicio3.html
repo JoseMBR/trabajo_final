@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Unidad 3</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Ejercicio 3 - Unidad 3</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Validación de Fecha</h2>
+            <p>Introduce una fecha en formato <b>dd-mm-aaaa</b> (entre 1900 y el año actual) y verifica si es válida.</p>
+
+            <div class="caja-codigo">
+                <h3>a) Comprobación de fecha</h3>
+                <form id="formFecha">
+                    <small>Fecha:</small>
+                    <br>
+                    <input type="text" id="fecha" size="15" placeholder="dd-mm-aaaa">
+                    <input type="button" value="Validar Fecha" id="validar">
+                </form>
+            </div>
+
+            <p id="mensaje-error" class="oculto"></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Cargar el menú dinámico -->
+    <script src="../../js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura - Ejercicio 1 - Unidad 4</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Factura - Ejercicio 1 - Unidad 4</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="factura">
+            <h2>Detalles de la Factura</h2>
+
+            <!-- Información de la empresa -->
+            <div class="empresa">
+                <h3>Información de la Empresa</h3>
+                <p><strong>Nombre:</strong> Empresa XYZ</p>
+                <p><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad</p>
+                <p><strong>Teléfono:</strong> 123-456-789</p>
+                <p><strong>NIF:</strong> X12345678</p>
+            </div>
+
+            <!-- Información del cliente -->
+            <div class="cliente">
+                <h3>Información del Cliente</h3>
+                <p><strong>Nombre:</strong> Juan Pérez</p>
+                <p><strong>Dirección:</strong> Avenida de la Libertad 456, Ciudad</p>
+                <p><strong>Teléfono:</strong> 987-654-321</p>
+                <p><strong>NIF:</strong> Y98765432</p>
+            </div>
+
+            <!-- Lista de productos -->
+            <div class="productos">
+                <h3>Lista de Productos</h3>
+                <table>
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Producto A</td>
+                        <td>20 €</td>
+                        <td>2</td>
+                        <td id="totalA"></td>
+                    </tr>
+                    <tr>
+                        <td>Producto B</td>
+                        <td>15 €</td>
+                        <td>3</td>
+                        <td id="totalB"></td>
+                    </tr>
+                    <tr>
+                        <td>Producto C</td>
+                        <td>30 €</td>
+                        <td>1</td>
+                        <td id="totalC"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Importe total -->
+            <div class="total">
+                <h3>Importe Total:</h3>
+                <p id="importeTotal">0 €</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript (José María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Cargar el menú dinámico -->
+    <script src="../../js/menu.js"></script>
+</body>
+</html>

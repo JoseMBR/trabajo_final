@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Unidad Didáctica 4</title>
+    <link rel="stylesheet" href="../../css/style.css"> <!-- Estilo global -->
+    <script src="../../js/script.js" defer></script> <!-- JavaScript global -->
+</head>
+<body>
+    <header>
+        <h1>Ejercicio Voluntario Nº2 - Unidad Didáctica 4</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav id="menu-container"></nav>
+
+    <main>
+        <section class="ejercicio">
+            <h2>Extender el objeto Array</h2>
+
+            <div class="caja-codigo">
+                <h3>a) Añadir elementos al final del array</h3>
+                <p>Comenzamos con un array inicial:</p>
+                <pre><code>var array1 = [0, 1, 2];</code></pre>
+                <p>Utilizamos el método <code>anadir</code> para agregar nuevos elementos:</p>
+                <pre><code>array1.anadir(3);</code></pre>
+                <p>El resultado será:</p>
+                <pre><code>array1 = [0, 1, 2, 3];</code></pre>
+            </div>
+
+            <div class="caja-codigo">
+                <h3>b) Controlar elementos duplicados</h3>
+                <p>Si no se permiten duplicados:</p>
+                <pre><code>array1.anadir(2, false);</code></pre>
+                <p>El resultado será:</p>
+                <pre><code>array1 = [0, 1, 2];</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Proyecto de JavaScript  (Jose María Bellido Ramírez)</p>
+    </footer>
+
+    <!-- Cargar el menú dinámico -->
+    <script src="../../js/menu.js"></script>
+</body>
+</html>
